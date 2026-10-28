@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <style>
+    .bg-circle { fill: #FAF7F2; stroke: #2D5A43; }
+    .inner-circle { stroke: #C27D38; }
+    .leaf { fill: #2D5A43; }
+    .leaf-accent { fill: #406B52; }
+    .feather-primary { fill: #1B3B2B; }
+    .feather-secondary { fill: #2D5A43; }
+    .beak { fill: #C27D38; }
+    .text-mark { fill: #1B3B2B; font-family: 'Newsreader', Georgia, serif; }
+
+    @media (prefers-color-scheme: dark) {
+      .bg-circle { fill: #16221A; stroke: #4F8064; }
+      .inner-circle { stroke: #E2A169; }
+      .leaf { fill: #5A9974; }
+      .leaf-accent { fill: #72B88F; }
+      .feather-primary { fill: #8FD4AB; }
+      .feather-secondary { fill: #66A882; }
+      .beak { fill: #E2A169; }
+      .text-mark { fill: #BCE2CC; }
+    }
+  </style>
+
+  <!-- Outer Boundary -->
+  <circle cx="200" cy="200" r="190" class="bg-circle" stroke-width="3" stroke-dasharray="6,4"/>
+  <circle cx="200" cy="200" r="180" fill="none" class="inner-circle" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Botanical Wreath Arc -->
+  <path d="M 60,225 Q 95,315 200,335 Q 305,315 340,225" fill="none" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Stylized Leaves -->
+  <path d="M 115,285 C 100,275 90,255 105,245 C 120,255 120,275 115,285 Z" class="leaf" opacity="0.8"/>
+  <path d="M 145,310 C 135,295 130,275 147,270 C 157,283 153,303 145,310 Z" class="leaf-accent" opacity="0.8"/>
+  <path d="M 285,285 C 300,275 310,255 295,245 C 280,255 280,275 285,285 Z" class="leaf" opacity="0.8"/>
+  <path d="M 255,310 C 265,295 270,275 253,270 C 243,283 247,303 255,310 Z" class="leaf-accent" opacity="0.8"/>
+
+  <!-- Avian Silhouette in Flight -->
+  <!-- Left wing -->
+  <path d="M 200,185 C 175,130 125,95 80,100 C 110,130 140,160 175,180 Z" class="feather-secondary"/>
+  <!-- Right wing -->
+  <path d="M 200,185 C 220,115 275,75 330,70 C 295,110 255,150 220,180 Z" class="feather-secondary"/>
+  <!-- Head & Torso -->
+  <path d="M 200,145 C 190,135 192,120 200,115 C 208,120 210,135 200,145 Z" class="feather-primary"/>
+  <!-- Beak -->
+  <polygon points="199,117 201,117 200,105" class="beak"/>
+  <!-- Tail feathers -->
+  <path d="M 188,180 Q 200,190 212,180 L 210,235 L 200,250 L 190,235 Z" class="feather-primary"/>
+  <path d="M 182,230 L 200,265 L 218,230 L 208,233 L 200,250 L 192,233 Z" class="feather-secondary"/>
+
+  <!-- Botanical Specimen Monogram -->
+  <text x="200" y="365" font-size="12" font-style="italic" class="text-mark" text-anchor="middle" letter-spacing="2">CHARLONE GIANNE · CIT-U</text>
+</svg>
